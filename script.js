@@ -1,19 +1,23 @@
-
+let container = document.querySelector('.container');
 
 
 for (let i = 0; i <= 100; i++) {
+    let box = document.createElement('div');
+    container.append(box)
+    box.classList.add('box')
+    // console.log(box)
     if (i % 15 == 0){
-        console.log('fizzbuzz')
+        box.append('fizzbuzz');
     }
     else if( i % 3 == 0){
-        console.log('fizz')
+        box.append('fizz');
     }
     else if(i % 5 == 0){
-        console.log('buzz')
+        box.append('buzz');
     }
     else {
-        console.log(i)
+        box.append(i);
 
     }
     
-}
+};
